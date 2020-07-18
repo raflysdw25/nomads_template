@@ -1,0 +1,554 @@
+// Pengaturan Style umum dari aplikasi
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Assistant', sans-serif;
+    color: #071C4D;
+}
+
+// Global Navbar
+// Mengatur ukuran logo
+.navbar-brand {
+    img {
+        max-height: 40px;
+    }
+}
+
+// Mengubah Warna dari Menu 
+.navbar-light {
+    .navbar-nav {
+        .nav-link {
+            color: #071C4D;
+            &.active {
+                font-weight: bold;
+                color: #071C4D !important;
+            }
+        }
+    }
+}
+
+// Mengatur Bentuk dan posisi tersendiri dari button Masuk
+.btn-navbar-right {
+    margin-top: -10px !important;
+    margin-bottom: -8px !important;
+    margin-right: -16px !important;
+    height: 80px;
+    border-radius: 0;
+}
+
+// Mengatur warna background, sama warna text, serta style ketika hover
+.btn-login {
+    background-color: #071C4D;
+    color: #ffffff;
+    &:hover {
+        background-color: #193E92;
+        color: #ffffff;
+    }
+}
+
+// End Global Navbar
+// Global Header
+header {
+    padding: 184px 0 199px;
+    margin-top: -78px;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    h1,
+    p {
+        color: #ffffff;
+    }
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        font-size: 50px;
+    }
+    p {
+        font-size: 25px;
+    }
+}
+
+.btn-cta {
+    background-color: #F7AB28;
+    color: #ffffff;
+    // border-radius: 0;
+    &:hover {
+        background-color: #FDBA46;
+        color: #ffffff;
+    }
+}
+
+// Statistics
+.section-stats {
+    margin-top: -50px;
+    .stats-item {
+        padding-top: 20px;
+        background-color: #ffffff;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    h2 {
+        font-size: 30px;
+        margin-bottom: 0;
+        font-weight: bold;
+    }
+    p {
+        font-size: 20px;
+        font-weight: lighter;
+    }
+}
+
+// End Statistics
+// Wisata Popular
+.section-popular {
+    min-height: 575px;
+    margin-bottom: -233px;
+    margin-top: -52px;
+    background-color: #001138;
+    .section-wisata-popular-heading {
+        margin-top: 173px;
+        h2,
+        p {
+            color: #ffffff;
+        }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            font-size: 50px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+// Popular content
+.section-popular-content {
+    .section-traveler {
+        .card-travel {
+            min-height: 380px;
+            background-color: #e4e6eb;
+            color: #ffffff;
+            background-size: cover;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+        .travel-country {
+            font-size: 20px;
+            color: #ffffff;
+        }
+        .travel-location {
+            font-size: 26px;
+            color: #ffffff;
+        }
+    }
+    .btn-more-wisata {
+        background-color: #D0CECC;
+        color: #ffffff;
+        &:hover {
+            background-color: #ADAAA8;
+            color: #ffffff;
+        }
+    }
+}
+
+// Our Networks
+.section-networks {
+    margin-top: -176px;
+    padding-top: 240px;
+    padding-bottom: 74px;
+    background-color: #ffffff;
+    h2 {
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        font-size: 45px;
+    }
+    p {
+        font-size: 20px;
+    }
+    img {
+        max-width: 100%;
+    }
+}
+
+// Testimonial
+.section-testimonial-heading {
+    background: linear-gradient(#fff 0%, #f7f9ff 100%);
+    padding-top: 50px;
+    min-height: 506px;
+    h2 {
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        font-size: 45px;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+
+.section-testimonial-content {
+    margin-top: -300px;
+    padding-bottom: 50px;
+    .card-testimonial {
+        padding: 40px 20px 10px;
+        border-radius: 11px;
+        margin-bottom: 20px;
+        .testimonial-content {
+            min-height: 380px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+        .testimonial {
+            font-weight: 200;
+            font-size: 24px;
+            color: #6e6e6e;
+            min-height: 160px;
+        }
+        .trip-to {
+            font-size: 20px;
+            color: #6e6e6e;
+            font-weight: normal;
+        }
+        hr {
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+    }
+    .btn-i-need-help {
+        background-color: #D0CECC;
+        color: #ffffff;
+        &:hover {
+            background-color: #ADAAA8;
+            color: #ffffff;
+        }
+    }
+}
+
+// Detail Page
+.section-details-header {
+    min-height: 335px;
+    background-color: #E4E6EB;
+    margin-top: -80px;
+}
+
+.section-details-content {
+    margin-top: -235px;
+    min-height: 100vh;
+    .breadcrumb {
+        background: transparent;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    .breadcrumb-item {
+        &.active {
+            color: #071C4D;
+            font-weight: bold;
+        }
+    }
+    // Card Details
+    .card-details {
+        padding: 33px;
+        border-radius: 11px;
+        h3 {
+            font-weight: 600;
+            font-size: 20px;
+            color: #071c4d;
+        }
+        .trip-information {
+            th {
+                font-weight: 300;
+                font-size: 18px;
+                color: #071C4D;
+            }
+            td {
+                font-weight: 300;
+                font-size: 18px;
+                color: #071C4D;
+            }
+        }
+        .disclaimer {
+            font-weight: 300;
+            font-size: 14px;
+            color: #b1b1b1;
+        }
+        .gj-datepicker {
+            // Memilih class yang menggunakan datepicker
+            .datepicker {
+                border-right: 0;
+            }
+            .input-group-append {
+                .btn {
+                    padding-right: 30px;
+                }
+            }
+        }
+        // Button Style Checkout Details
+        .btn-add-now {
+            background-color: #071C4D;
+            color: #fff;
+            &:hover {
+                background-color: #173E9A;
+                color: #fff;
+            }
+        }
+        // Payment Instruction
+        .text-blue {
+            color: #071C4D;
+            font-weight: bold;
+        }
+        .text-orange {
+            color: #F7AB28;
+            font-weight: bold;
+        }
+        // Position Payment Banks
+        .payment-instruction {
+            font-weight: 300;
+            font-size: 15px;
+            color: #b1b1b1;
+        }
+        .bank {
+            .bank-item {
+                h3 {
+                    font-size: 15px;
+                    color: #071C4D;
+                    margin-bottom: 0;
+                }
+                p {
+                    margin-bottom: 0;
+                }
+                .bank-description {
+                    float: left;
+                    overflow: hidden;
+                    margin-left: 10px;
+                }
+            }
+            .bank-image {
+                width: 50px;
+                height: 50px;
+                float: left;
+            }
+        }
+    }
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    p {
+        font-size: 20px;
+        color: #929292;
+    }
+    .card-right {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom: 0;
+    }
+    // Informasi penting destinasi
+    .features {
+        margin-top: 27px;
+        h3 {
+            font-size: 16px;
+            color: #071C4D;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+        p {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+        .description {
+            margin-left: 10px;
+            overflow: hidden;
+            float: left;
+        }
+        .featured-images {
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+    }
+    // Gambar Destinasi
+    .gallery {
+        .xzoom-container {
+            display: block;
+            .xzoom {
+                width: 100%;
+                box-shadow: none;
+                margin-bottom: 10px;
+            }
+            .xactive {
+                border: 10px solid #34FA48;
+                box-shadow: none;
+            }
+        }
+    }
+    // Members are going
+    .members {
+        .members-image {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .join-container {
+        margin-top: -16px;
+    }
+}
+
+// Checkout
+// End Checkout
+// Footer
+.section-footer {
+    h5 {
+        font-weight: bold;
+    }
+    a {
+        color: #071C4D;
+        font-weight: normal;
+    }
+    li {
+        margin-bottom: 10px;
+    }
+}
+
+// Success Page
+.section-success {
+    height: 90vh;
+    h1 {
+        font-weight: 600;
+        font-size: 26px;
+        color: #071C4D;
+    }
+    p {
+        font-weight: 300;
+        font-size: 18px;
+        color: #b1b1b1;
+    }
+    .btn-home-page {
+        border-radius: 4px;
+        background-color: #071C4D;
+        color: #ffffff;
+        &:hover {
+            background-color: #153E9F;
+            color: #ffffff;
+        }
+    }
+}
+
+// Login Page
+.login-container {
+    @media (min-width: 992px) {
+        background: linear-gradient(90deg, #ffffff 62%, #E4E6EB 38%);
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+.page-login {
+    height: 100vh;
+    .section-left {
+        h1 {
+            font-family: "Playfair Display";
+            font-weight: bold;
+            font-size: 50px;
+            text-align: left;
+            color: #071C4D;
+        }
+    }
+    .section-right {
+        a {
+            font-family: "Assistant";
+            font-weight: 300;
+            font-size: 16px;
+        }
+        form {
+            border-radius: 22px;
+        }
+    }
+}
+
+// Register Page
+.page-register {
+    height: 100vh;
+    // overflow-y: hidden;
+    .section-left {
+        // width: 50%;
+        h1 {
+            font-family: "Playfair Display";
+            font-weight: bold;
+            font-size: 40px;
+            text-align: left;
+            color: #071C4D;
+        }
+    }
+    .section-right {
+        //   width: 50%;
+        .card {
+            min-width: 500px;
+        }
+        a {
+            font-family: "Assistant";
+            font-weight: 300;
+            font-size: 16px;
+        }
+        form {
+            border-radius: 22px;
+        }
+    }
+    @media (max-width: 994px) {
+        .section-left {
+            h1 {
+                margin-bottom: 20px;
+                margin-top: 20px;
+                font-size: 20px;
+                br {
+                    display: none;
+                }
+            }
+            img {
+                display: none;
+            }
+        }
+        .section-right {
+            .card {
+                margin-right: 20px;
+                min-width: 250px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+// Paket Travel Page
+.section-paket-content {
+    .section-traveler {
+        .card-travel {
+            min-height: 550px;
+            background-color: #e4e6eb;
+            color: #ffffff;
+            background-size: cover;
+            padding: 30px;
+            margin-bottom: 30px;
+            // border-radius: 10px;
+        }
+        .travel-country {
+            font-size: 30px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .travel-location {
+            font-size: 30px;
+            color: #ffffff;
+        }
+    }
+}
+
+@media(max-width:839px) {
+    .card-details {
+        margin-bottom: 10px;
+    }
+}
